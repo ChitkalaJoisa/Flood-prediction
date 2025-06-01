@@ -1,11 +1,9 @@
-
 const indianCities = [
-  "Assam", "mangalore", "Udupi", "Chennai", "Mumbai", "Delhi", "Bangalore", "Kolkata", "Hyderabad", "Ahmedabad",
+  "Assam", "Mangalore", "Udupi", "Chennai", "Mumbai", "Delhi", "Bangalore", "Kolkata", "Hyderabad", "Ahmedabad",
   "Pune", "Jaipur", "Lucknow", "Kanpur", "Nagpur", "Indore", "Bhopal", "Patna",
   "Thiruvananthapuram", "Srinagar", "Guwahati", "Udupi", "Coimbatore", "Madurai",
   "Vijayawada", "Visakhapatnam", "Ranchi", "Jamshedpur", "Agra", "Varanasi", "Amritsar",
-  "Shimla", "Manali", "Dehradun", "Panaji", "Raipur", "Surat", "Vadodara", "Rajkot", "manipal"
-  ,"Kerala"
+  "Shimla", "Manali", "Dehradun", "Panaji", "Raipur", "Surat", "Vadodara", "Rajkot", "Manipal"
 ];
 
 const select = document.getElementById('locationSelect');
@@ -56,7 +54,7 @@ function fetchSatelliteImage(predictionType) {
         ☔ Rainfall: ${weather.rainfall} mm
       `;
 
-      //  model prediction
+      // Get model prediction
       return fetch("/predict-weather", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
